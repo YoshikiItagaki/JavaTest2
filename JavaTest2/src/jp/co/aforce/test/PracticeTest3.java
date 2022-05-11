@@ -14,6 +14,7 @@ public class PracticeTest3 {
 		//2.田中太郎　出力
 		System.out.println(tanaka_taro[1]);
 
+
 		//3.上で社員クラス生成↑
 
 		//4.aコレクションに社員データを全て格納
@@ -23,7 +24,7 @@ public class PracticeTest3 {
 
 		//番号は１，名前は田中太郎、年齢は27歳です。
 
-		ArrayList<Employee> employees = new ArrayList<Employee>();
+		ArrayList<Employee> employees = new ArrayList<>();
 
 		employees.add(0,tanaka);
 		employees.add(1,sato);
@@ -40,8 +41,8 @@ public class PracticeTest3 {
 		scores.put("数学", "80点");
 		scores.put("英語", "65点");
 
-		for(Map.Entry<String,String> entry: scores.entrySet()) {
-			System.out.println(entry.getKey()+":"+entry.getValue());
+		for(Map.Entry<String, String> entry: scores.entrySet()) {
+			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
 
 		//6. このデータは科目と点数というペアで各々のデータが存在しているが、

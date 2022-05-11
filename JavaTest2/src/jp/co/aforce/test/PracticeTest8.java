@@ -116,11 +116,14 @@ public class PracticeTest8 {
 
 
 		if(value/2 == 0) {
+			System.out.println("\n");
 			return true;
 		} else {
+			System.out.println("\n");
 			return false;
 
 		}
+
 
 	}
 
@@ -129,9 +132,11 @@ public class PracticeTest8 {
 	public static String getMessage(String name, boolean isKid) {
 
 		if(isKid == true) {
+			System.out.println("\n");
 			return "こんにちは。" + name + "ちゃん。\n";
 
 		} else {
+			System.out.println("\n");
 			return "こんにちは。" + name +  "さん。\n";
 
 		}
@@ -140,7 +145,7 @@ public class PracticeTest8 {
 
 	//9.
 
-	public static String getLongestString(String bodies[]) {
+	/*public static String getLongestString(String bodies[]) {
 		int i;
 
 		for(i = 0; i < bodies.length; i++ ) {
@@ -154,7 +159,43 @@ public class PracticeTest8 {
 		}
 		return bodies[i + (bodies.length - 1)];
 
+	}*/
+
+	//9　解答写経
+	/*public String getLongestString(String[]array) {
+
+		String str = null;
+		int maxCount = array[0].length();
+
+		for(int i = 1; i < array.length; i++) {
+			if(maxCount <= array[i].length()) {
+				maxCount = array[i].length();
+				str = array[i];
+			}
+		}
+
+		return str;
+	}*/
+
+	//9 解答を参考に
+
+	public static String getLongestString(String bodies[]) {
+
+		String str = null;
+		int maxCount = bodies[0].length();
+		System.out.println("\n");
+
+		for(int i = 0; i < bodies.length; i++ ) {
+			if(maxCount <= bodies[i].length()) {
+				maxCount = bodies[i].length();
+				str = bodies[i];
+
+			}
+		}
+		return str;
+
 	}
+
 
 
 

@@ -22,7 +22,7 @@ public class PracticeTest1 {
 		//どの範囲までアクセル出来るかの制限を設定すること
 
 		//5.
-		//private
+		//デフォルト
 
 
 

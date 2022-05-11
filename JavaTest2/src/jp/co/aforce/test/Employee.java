@@ -8,8 +8,9 @@ public class Employee{
 		private String gender;
 		private int age;
 
-		public Employee(int IdNumber, String name, String gender, int age){
-			this.IdNumber = IdNumber;
+		public Employee(int idNumber, String name, String gender, int age) {
+			super();
+			IdNumber = idNumber;
 			this.name = name;
 			this.gender = gender;
 			this.age = age;
